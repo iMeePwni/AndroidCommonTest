@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">AndroidCommonTest</string>
+    <string name="app_name">CommonTest</string>
+
+    <!--  Index  -->
+    <string name="index">Index</string>
+
+    <string name="kotlin">Kotlin</string>
+    <string name="flow">Flow</string>
+    <string name="coroutines">Coroutines</string>
+    <string name="androidx">androidx</string>
+    <string name="jetpack">Jetpack</string>
+    <string name="firebase">Firebase</string>
+    <string name="material_design">Material Design</string>
+
+    <string-array name="feature_list">
+        <item>@string/kotlin</item>
+        <item>@string/flow</item>
+        <item>@string/coroutines</item>
+        <item>@string/androidx</item>
+        <item>@string/jetpack</item>
+        <item>@string/firebase</item>
+        <item>@string/material_design</item>
+    </string-array>
+
+    <!--  Base description  -->
+    <string name="description">Description</string>
+
+    <!--  Kotlin  -->
+    <string name="kotlin_desc">Kotlin is a modern but already mature programming language aimed to make developers happier. It’s concise, safe, interoperable with Java and other languages, and provides many ways to reuse code between multiple platforms for productive programming.</string>
+
+    <!--  Flow  -->
+    <string name="flow_desc">A flow is a stream of multiple, asynchronously computed values. Flows emit values as soon as they are done computing them. A flow consists of a producer and a consumer. As the names suggest, a producer emits values while the consumer receives the values.</string>
 </resources>

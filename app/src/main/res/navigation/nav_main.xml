@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/indexFragment">
+
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="com.imeepwni.common.fragment.IndexFragment"
+        android:label="IndexFragment"
+        tools:layout="@layout/fragment_index">
+        <action
+            android:id="@+id/action_flowDescFragment"
+            app:destination="@id/flowDescFragment" />
+        <action
+            android:id="@+id/action_kotlinDescFragment"
+            app:destination="@id/kotlinDescFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flowDescFragment"
+        android:name="com.imeepwni.common.fragment.flow.FlowDescFragment"
+        android:label="FlowDescFragment"
+        tools:layout="@layout/fragment_base_desc" />
+
+    <fragment
+        android:id="@+id/kotlinDescFragment"
+        android:name="com.imeepwni.common.fragment.kotlin.KotlinDescFragment"
+        android:label="KotlinDescFragment"
+        tools:layout="@layout/fragment_base_desc" />
+
+</navigation>

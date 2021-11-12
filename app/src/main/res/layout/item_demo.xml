@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.imeepwni.common.data.TopicDemo" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/cat_demo_landing_row_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/cat_list_two_line_row_height"
+        android:paddingLeft="@dimen/cat_list_horizontal_padding"
+        android:paddingRight="@dimen/cat_list_horizontal_padding">
+
+        <ImageView
+            android:id="@+id/cat_demo_landing_row_icon"
+            android:layout_width="@dimen/cat_list_icon_size"
+            android:layout_height="@dimen/cat_list_icon_size"
+            app:srcCompat="@drawable/ic_demo_play_circle_outline_vd_theme_24px" />
+
+        <TextView
+            android:id="@+id/cat_demo_landing_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/cat_list_text_margin_from_icon"
+            android:layout_toEndOf="@+id/cat_demo_landing_row_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{data.title}"
+            android:textAppearance="?attr/textAppearanceBody2"
+            tools:text="Demo" />
+
+        <TextView
+            android:id="@+id/cat_demo_landing_row_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_demo_landing_row_title"
+            android:layout_marginStart="@dimen/cat_list_text_margin_from_icon"
+            android:layout_toEndOf="@+id/cat_demo_landing_row_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{data.className}"
+            android:textAppearance="?attr/textAppearanceCaption"
+            tools:text="MainDemoFragment" />
+    </RelativeLayout>
+</layout>
